@@ -1,0 +1,1 @@
+from EndToEndDeployment.config.configuration import ConfigurationManager

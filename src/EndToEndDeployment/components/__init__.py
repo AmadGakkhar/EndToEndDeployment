@@ -1,0 +1,1 @@
+from EndToEndDeployment.components.data_ingestion import DataIngestion

@@ -1,0 +1,1 @@
+from EndToEndDeployment.entity.config_enity import (DataIngestionConfig)

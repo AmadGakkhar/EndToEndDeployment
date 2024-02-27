@@ -28,3 +28,39 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
 
 ** @ensure_annotation decorator enforces the data types of a function. i.e if any other data type is encountered it will make sure that an error is raised.
 
+## Setting Up Data Ingestion
+
+ ### Standard Workflow
+- Update config/config.yaml
+
+    We will be adding configuration related to data ingestion. In this particular project, we are creating artifacts folder in which we will store our data. We are setting certain attributes like source url, downloaded zip name, unzip dir etc.
+
+- Update secrets.yaml [optional]
+
+    Don't have any secrets.
+
+- Update params.yaml
+
+    Don't have any model yet. Just add dummy value
+
+- Update entity
+
+    Create a custom data type to hold all the entities of config.yaml file needed for data ingestion.
+    Create src/EndToEndImplementation/entity/config_entity.py and store the created entity there.
+
+- Update configuration manager in src/config
+
+    Save config.yaml and params.yaml paths in src/EndToEndDeployment/constants/__init__.py.
+
+    Create ConfigurationManager Class in **src/EndToEndDeployment/config/configuration.py** and write a method which return data ingestion configuration of the type we created in previous step. i.e DataIngestionConfig
+
+- Update components
+
+    Create DataIngestion Class in **src/EndToEndDeployment/components/data_ingestion.py** which takes DataIngestionConfig object. It has methods for downloading the data, unzipping the data, cleaning the data etc. These functions can be changed according to project requirements.
+
+- Update pipeline
+
+    Create src/EndToEndDeployment/pipeline/stage_01_data_ingestion.py. Import ConfigurationManager and DataIngestion Class along with logger.
+    Create TrainingPipeline Class. Write its main function which tests the basic functionality uptil now.
+
+- Update main.py
