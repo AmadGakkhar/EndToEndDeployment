@@ -2,7 +2,7 @@ from collections import namedtuple
 
 DataIngestionConfig = namedtuple("DataIngestionConfig", [
     "root_dir",
-    "source_url",
+    "source_URL",
     "local_data_file",
     "unzip_dir",
 ])

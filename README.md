@@ -64,3 +64,5 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
     Create TrainingPipeline Class. Write its main function which tests the basic functionality uptil now.
 
 - Update main.py
+    
+    Create main function which calls the pipeline
