@@ -1,0 +1,15 @@
+tensorflow
+pandas
+numpy
+torch
+notebook
+matplotlib
+seaborn
+python_box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+-e .
