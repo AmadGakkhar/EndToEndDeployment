@@ -83,3 +83,5 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
 ## Prepare Base Model -> Follow above mentioned Workflow for this step as well.
 
 ## Prepare Callbacks -> Created TF Callbacks. Follow the same Workflow.
+## Prepare Training -> Created Training Pipeline. Follow the same Workflow.
+## Prepare Evaluation -> Created Evaluation Pipeline. Follow the same Workflow.
