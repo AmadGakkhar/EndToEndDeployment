@@ -1,2 +1,5 @@
 from EndToEndDeployment.components.data_ingestion import DataIngestion
 from EndToEndDeployment.components.prepare_base_model import PrepareBaseModel
+from EndToEndDeployment.components.prepare_callbacks import PrepareCallback
+from EndToEndDeployment.components.training import Training
+from EndToEndDeployment.components.evaluation import Evaluation

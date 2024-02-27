@@ -1,2 +1,4 @@
 from EndToEndDeployment.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from EndToEndDeployment.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
+from EndToEndDeployment.pipeline.stage_03_training import ModelTrainingPipeline
+from EndToEndDeployment.pipeline.stage_04_evaluation import EvaluationPipeline

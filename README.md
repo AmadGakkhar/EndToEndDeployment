@@ -81,3 +81,5 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
         Create main function which calls the pipeline
 
 ## Prepare Base Model -> Follow above mentioned Workflow for this step as well.
+
+## Prepare Callbacks -> Created TF Callbacks. Follow the same Workflow.
