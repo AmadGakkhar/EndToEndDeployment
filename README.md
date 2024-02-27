@@ -44,38 +44,38 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
 
 
 
-1. **Update config/config.yaml**
+    1. **Update config/config.yaml**
 
-    We will be adding configuration related to data ingestion. In this particular project, we are creating artifacts folder in which we will store our data. We are setting certain attributes like source url, downloaded zip name, unzip dir etc.
+        We will be adding configuration related to data ingestion. In this particular project, we are creating artifacts folder in which we will store our data. We are setting certain attributes like source url, downloaded zip name, unzip dir etc.
 
-2. **Update secrets.yaml [optional]**
+    2. **Update secrets.yaml [optional]**
 
-    Don't have any secrets.
+        Don't have any secrets.
 
-3. **Update params.yaml**
+    3. **Update params.yaml**
 
-    Don't have any model yet. Just add dummy value
+        Don't have any model yet. Just add dummy value
 
-4. **Update Entity**
+    4. **Update Entity**
 
-    Create a custom data type to hold all the entities of config.yaml file needed for data ingestion.
-    Create src/EndToEndImplementation/entity/config_entity.py and store the created entity there.
+        Create a custom data type to hold all the entities of config.yaml file needed for data ingestion.
+        Create src/EndToEndImplementation/entity/config_entity.py and store the created entity there.
 
-5. **Update Configuration Manager in src/config**
+    5. **Update Configuration Manager in src/config**
 
-    Save config.yaml and params.yaml paths in src/EndToEndDeployment/constants/__init__.py.
+        Save config.yaml and params.yaml paths in src/EndToEndDeployment/constants/__init__.py.
 
-    Create ConfigurationManager Class in **src/EndToEndDeployment/config/configuration.py** and write a method which return data ingestion configuration of the type we created in previous step. i.e DataIngestionConfig
+        Create ConfigurationManager Class in **src/EndToEndDeployment/config/configuration.py** and write a method which return data ingestion configuration of the type we created in previous step. i.e DataIngestionConfig
 
-6. **Update Components**
+    6. **Update Components**
 
-    Create DataIngestion Class in **src/EndToEndDeployment/components/data_ingestion.py** which takes DataIngestionConfig object. It has methods for downloading the data, unzipping the data, cleaning the data etc. These functions can be changed according to project requirements.
+        Create DataIngestion Class in **src/EndToEndDeployment/components/data_ingestion.py** which takes DataIngestionConfig object. It has methods for downloading the data, unzipping the data, cleaning the data etc. These functions can be changed according to project requirements.
 
-7. **Update Pipeline**
+    7. **Update Pipeline**
 
-    Create src/EndToEndDeployment/pipeline/stage_01_data_ingestion.py. Import ConfigurationManager and DataIngestion Class along with logger.
-    Create TrainingPipeline Class. Write its main function which tests the basic functionality uptil now.
+        Create src/EndToEndDeployment/pipeline/stage_01_data_ingestion.py. Import ConfigurationManager and DataIngestion Class along with logger.
+        Create TrainingPipeline Class. Write its main function which tests the basic functionality uptil now.
 
-8. **Update main.py**
-    
-    Create main function which calls the pipeline
+    8. **Update main.py**
+        
+        Create main function which calls the pipeline
