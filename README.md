@@ -15,3 +15,16 @@ It's like telling the Python package manager (pip): "Hey, when you install this 
 
 This is often used during development to streamline the testing and modification process."
 
+## Setting up Log
+
+Created custom Log. Code in src/EndtoEndDeployment/__init__.py
+Tested it using test .py in root.
+
+## Setting up utilities
+
+Created src/EndtoEndDeployment/utils/common.py to write some common utility functions.
+
+*ConfigBox provides easy way to access dict elements. For Example for a dict d = {"key" : "value", "key1" : "value1"}, d.key will give error but for d2 = ConfigBox({"key" : "value", "key1" : "value1"}), d2.key will work.
+
+** @ensure_annotation decorator enforces the data types of a function. i.e if any other data type is encountered it will make sure that an error is raised.
+
