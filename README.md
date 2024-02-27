@@ -1,6 +1,6 @@
 # EndToEndDeployment
 
-## Create a Template for Folder Strcture
+## Create a Template for Folder Structure
 Created template.py and created a barebones project structure.
 
 ## Setting up Environment
