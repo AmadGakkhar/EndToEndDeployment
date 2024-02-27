@@ -1,1 +1,1 @@
-from EndToEndDeployment.entity.config_enity import (DataIngestionConfig)
+from EndToEndDeployment.entity.config_enity import (DataIngestionConfig, PrepareBaseModelConfig)

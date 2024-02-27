@@ -1,1 +1,2 @@
 from EndToEndDeployment.components.data_ingestion import DataIngestion
+from EndToEndDeployment.components.prepare_base_model import PrepareBaseModel
