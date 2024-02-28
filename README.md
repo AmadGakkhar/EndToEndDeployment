@@ -85,3 +85,6 @@ Created src/EndtoEndDeployment/utils/common.py to write some common utility func
 ## Prepare Callbacks -> Created TF Callbacks. Follow the same Workflow.
 ## Prepare Training -> Created Training Pipeline. Follow the same Workflow.
 ## Prepare Evaluation -> Created Evaluation Pipeline. Follow the same Workflow.
+## Created UI using FlaskAPI
+
+ECR-URI: 555443311352.dkr.ecr.us-east-2.amazonaws.com/catdog
